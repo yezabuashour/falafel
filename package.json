@@ -1,0 +1,29 @@
+{
+  "name": "falafel",
+  "version": "1.0.0",
+  "description": "full stack web app to test pipelines",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yezabuashour/falafel.git"
+  },
+  "author": "Yazan Abuashour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yezabuashour/falafel/issues"
+  },
+  "homepage": "https://github.com/yezabuashour/falafel#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
